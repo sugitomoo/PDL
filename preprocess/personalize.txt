@@ -1,0 +1,13 @@
+In this task, you will create concise and personalized summaries from captions that have been created from video frames by an image captioning model. 
+Focus on extracting and highlighting only the elements of the captions that are directly relevant to the user's specific interests.
+Your goal is to emphasize the most significant details pertinent to the query while omitting any information that is not relevant, ensuring that the summary is insightful and precisely tailored to the user's needs.
+
+User query :
+"""
+[USER QUERY]
+"""
+
+Captions: 
+"""[CAPTIONS]"""
+
+The final summary should be delivered in JSON format in a single line (~80 words), perfectly encapsulating the user's query with accuracy and relevance, and avoiding any extraneous content.
