@@ -4,7 +4,7 @@ The official repository of our paper "**Language-Guided Self-Supervised Video Su
 
 ## Model Overview
 <p align="center">
-<img src="./fig/PDL_model.pdf" alt="model" width="80%">
+<img src="./fig/PDL_model.png" alt="model" width="80%">
 </p>
 
 
