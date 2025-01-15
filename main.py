@@ -90,7 +90,9 @@ def main(args):
         if args.dataset == 'SumMe' or args.dataset == 'TVSum':
             kendall_tau, spearman_rho = calc_kendall_spearman(frame_scores, user_score)
             print(f"Kendall's tau: {kendall_tau}")
-            print(f"Spearman's rho: {spearman_rho}")   
+            print(f"Spearman's rho: {spearman_rho}")
+            total_kendall_tau+= kendall_tau
+            total_spearman_rho += spearman_rho   
             path = f"{args.margin}_{args.lr}_{kendall_tau:.4f}_{spearman_rho:.4f}"
         elif args.dataset == "Mr_HiSum":
             path = f"{args.margin}_{args.lr}"
@@ -104,8 +106,6 @@ def main(args):
         if args.dataset == "Mr_HiSum":
             continue       
 
-        total_kendall_tau+= kendall_tau
-        total_spearman_rho += spearman_rho
         
     avg_kendall_tau = total_kendall_tau / len(video_dataset)
     avg_spearman_rho = total_spearman_rho / len(video_dataset)
