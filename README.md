@@ -91,10 +91,10 @@ If you find our paper or code useful in your work, please **[★star]** this rep
 
 BibTeX:
 ```bibtex
-@article{sugihara2024language,  
-  title={Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video},  
-  author={Sugihara, Tomoya and Masuda, Shuntaro and Xiao, Ling and Yamasaki, Toshihiko},  
-  journal={arXiv preprint arXiv:2405.08890},  
-  year={2024}  
-}  
+@inproceedings{sugihara2024language,
+  title={Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video},
+  author={Sugihara, Tomoya and Masuda, Shuntaro and Xiao, Ling and Yamasaki, Toshihiko},
+  booktitle={Proceedings of the 6th ACM International Conference on Multimedia in Asia},
+  year={2024}
+}
 ```
