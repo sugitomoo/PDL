@@ -51,7 +51,7 @@ class VideoSumDataset(object):
             with open(f"{self.data_root}/metadata.json",'r') as file:
                 metadata = json.load(file)
             for item in metadata:
-                if item['original title'] == video_name:
+                if item['video_id'] == video_name:
                     frame_interval = item['frame_interval']
                     n_frames = item['original_frame_number']
             n_frame_per_seg = ((change_points[:,1] - change_points[:,0] + 1) * frame_interval)
